@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>REEARTH - Podcast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="parallax-background" id="parallax"></div>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="REEARTH Logo">
+        <span>REEARTH</span>
+      </a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a class="active" href="podcast.html">Podcast</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="navOverlay"></div>
+
+  <main class="main">
+    <div class="intro">
+      <div class="podcast-title">The "Make a Change!" Podcast</div>
+      <div class="podcast-sub-title">Environmental Talks</div>
+      <div class="podcast-content">
+        Welcome to the "Make a Change!" Podcast, where we explore the latest topics, stories, and solutions in environmental sustainability. Join us as we talk with experts, activists, and everyday people making a difference for our planet. Listen in for inspiring conversations, practical tips, and the latest news on climate action, conservation, and green living.
+      </div>
+    </div>
+
+    <div class="episode">
+      <img src="img/podcast1.jpg" alt="Global Heating" />
+      <div class="episode-content">
+        <div class="episode-first">
+          <h2 class="episode-title">Global Heating Is Not a Debate</h2>
+          <div class="episode-info">
+            <span>9/29/2023</span> | <span>10 min</span> | 
+            <span class="latest-episode">Latest Episode</span> |
+            <span class="custom-audio-player">
+              <button class="play-btn" onclick="toggleAudio(this)">
+                <i class="fas fa-play"></i>
+              </button>
+              <div class="progress-container" onclick="seekAudio(this, event)">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="time-info">
+                <span class="current-time">0:00</span>
+              </div>
+              <audio src="audio/audio1.mp3" preload="metadata"></audio>
+            </span>
+          </div>
+        </div>
+        <p class="episode-description">
+          In this episode, we discuss the overwhelming scientific consensus on global heating and why it's time to move beyond debate and focus on solutions. Hear from climate scientists and activists about the urgent actions needed to address this crisis.
+        </p>
+      </div>
+    </div>
+
+    <div class="episode">
+      <img src="img/podcast2.jpg" alt="Climate Change" />
+      <div class="episode-content">
+        <div class="episode-first">
+          <h2 class="episode-title">Climate Change and Its Impact</h2>
+          <div class="episode-info">
+            <span>9/22/2023</span> | <span>15 min</span> |
+            <span class="custom-audio-player">
+              <button class="play-btn" onclick="toggleAudio(this)">
+                <i class="fas fa-play"></i>
+              </button>
+              <div class="progress-container" onclick="seekAudio(this, event)">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="time-info">
+                <span class="current-time">0:00</span>
+              </div>
+              <audio src="audio/audio2.mp3" preload="metadata"></audio>
+            </span>
+          </div>
+        </div>
+        <p class="episode-description">
+          Explore how climate change is affecting communities, ecosystems, and economies around the world. We share real stories from those on the front lines and discuss what can be done to adapt and build resilience.
+        </p>
+      </div>
+    </div>
+
+    <div class="episode">
+      <img src="img/podcast3.jpg" alt="Sustainable Practices" />
+      <div class="episode-content">
+        <div class="episode-first">
+          <h2 class="episode-title">Sustainable Practices for a Greener Future</h2>
+          <div class="episode-info">
+            <span>9/15/2023</span> | <span>20 min</span> |
+            <span class="custom-audio-player">
+              <button class="play-btn" onclick="toggleAudio(this)">
+                <i class="fas fa-play"></i>
+              </button>
+              <div class="progress-container" onclick="seekAudio(this, event)">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="time-info">
+                <span class="current-time">0:00</span>
+              </div>
+              <audio src="audio/audio3.mp3" preload="metadata"></audio>
+            </span>
+          </div>
+        </div>
+        <p class="episode-description">
+          Discover practical ways individuals and organizations are adopting sustainable practices. From reducing waste to renewable energy, learn how you can contribute to a greener future.
+        </p>
+      </div>
+    </div>
+    
+    <div class="episode">
+      <img src="img/podcast4.jpg" alt="Biodiversity Conservation" />
+      <div class="episode-content">
+        <div class="episode-first">
+          <h2 class="episode-title">Biodiversity Conservation Efforts</h2>
+          <div class="episode-info">
+            <span>9/08/2023</span> | <span>25 min</span> |
+            <span class="custom-audio-player">
+              <button class="play-btn" onclick="toggleAudio(this)">
+                <i class="fas fa-play"></i>
+              </button>
+              <div class="progress-container" onclick="seekAudio(this, event)">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="time-info">
+                <span class="current-time">0:00</span>
+              </div>
+              <audio src="audio/audio4.mp3" preload="metadata"></audio>
+            </span>
+          </div>
+        </div>
+        <p class="episode-description">
+          Join us as we highlight inspiring biodiversity conservation projects and the people behind them. Learn why protecting species and habitats is essential for a healthy planet.
+        </p>
+      </div>
+    </div>  
+</main>
+
+  <footer>
+    <div class="footer-credits">
+      <p>Copyright © 2025</p>
+      <p>
+        REEARTH acknowledges the Traditional Owners of Country throughout Australia and acknowledges their continuing connection to land, waters and community.
+        We pay our respects to the people, the cultures and the Elders past and present.
+        Learn more about <a href="https://www.indigenous.gov.au/" target="_blank" rel="noopener noreferrer">Australia's Indigenous communities</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const navbarToggle = document.getElementById('navbarToggle');
+    const navbarNav = document.getElementById('navbarNav');
+    const navOverlay = document.getElementById('navOverlay');
+
+    navbarToggle.addEventListener('click', () => {
+      navbarNav.classList.toggle('open');
+      navOverlay.classList.toggle('active');
+      navbarToggle.classList.toggle('active');
+    });
+
+    navOverlay.addEventListener('click', () => {
+      navbarNav.classList.remove('open');
+      navOverlay.classList.remove('active');
+      navbarToggle.classList.remove('active');
+    });
+
+    const parallax = document.getElementById('parallax');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      parallax.style.transform = `translateY(-${scrollY * 0.3}px)`;
+    });
+
+    function toggleAudio(btn) {
+      const audio = btn.parentElement.querySelector("audio");
+      const icon = btn.querySelector("i");
+      const currentTime = btn.parentElement.querySelector(".current-time");
+      const progressBar = btn.parentElement.querySelector(".progress-bar");
+
+      if (audio.paused) {
+        audio.play();
+        icon.classList.replace("fa-play", "fa-pause");
+      } else {
+        audio.pause();
+        icon.classList.replace("fa-pause", "fa-play");
+      }
+
+      audio.ontimeupdate = () => {
+        const progress = (audio.currentTime / audio.duration) * 100;
+        progressBar.style.width = `${progress}%`;
+        currentTime.textContent = formatTime(audio.currentTime);
+      };
+
+      audio.onended = () => {
+        icon.classList.replace("fa-pause", "fa-play");
+        progressBar.style.width = `0%`;
+        currentTime.textContent = "0:00";
+      };
+    }
+
+    function seekAudio(container, e) {
+      const audio = container.parentElement.querySelector("audio");
+      const rect = container.getBoundingClientRect();
+      const offsetX = e.clientX - rect.left;
+      const percent = offsetX / rect.width;
+      audio.currentTime = percent * audio.duration;
+    }
+
+    function formatTime(sec) {
+      const minutes = Math.floor(sec / 60);
+      const seconds = Math.floor(sec % 60).toString().padStart(2, "0");
+      return `${minutes}:${seconds}`;
+    }
+  </script>
+</body>
+</html>

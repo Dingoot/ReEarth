@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>REEARTH - About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+    <div class="parallax-background" id="parallax"></div>    
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="REEARTH Logo">
+                <span>REEARTH</span>
+            </a>
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar-nav" id="navbarNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="navOverlay"></div>
+
+    <section class="about-section dark-section">
+        <div class="content-box">
+            <h2>About REEARTH</h2>
+            <p>
+                REEARTH is dedicated to informing Brisbane citizens about climate change through real-time satellite data. Our mission is to provide accurate and insightful data on climate change, using previous disasters and their impacts on cities to provide solutions that can make a difference. Besides that, we will cooperate with educational organizers to educate the youth about climate change. We aim to make a positive impact by educating and empowering individuals to take action.
+            </p>
+        </div>
+    </section>
+
+    <section class="about-section light-section">
+        <div class="content-box">
+            <h2>Our Team</h2>
+            <p>
+                We’re a team of developers, designers, and researchers creating a climate change website for Brisbane. Our goal is to provide Brisbanites with clear, actionable insights on local environmental challenges and sustainable solutions. Through technology, we aim to inform and inspire community-driven action for a greener future.
+            </p>
+        </div>
+    </section>
+
+    <section class="about-section dark-section">
+        <div class="content-box">
+            <h2>Our Commitment</h2>
+            <p>
+                Our team is dedicated to designing and developing an informative and engaging climate change website for Brisbane. We commit to applying design thinking principles, collaborating effectively, and leveraging our technical and creative skills to deliver a user-friendly and impactful platform. Through accessible content and interactive features, we aim to educate the community, raise awareness, and empower Brisbanites to take action. By working closely with local communities, we strive to provide valuable resources that inspire sustainable solutions and long-term environmental responsibility.
+            </p>
+        </div>
+    </section>
+
+
+    <script>
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarNav = document.getElementById('navbarNav');
+        const navOverlay = document.getElementById('navOverlay');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarNav.classList.toggle('open');
+            navOverlay.classList.toggle('active');
+            navbarToggle.classList.toggle('active');
+        });
+
+        navOverlay.addEventListener('click', () => {
+            navbarNav.classList.remove('open');
+            navOverlay.classList.remove('active');
+            navbarToggle.classList.remove('active');
+        });
+
+        const parallax = document.getElementById('parallax');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            parallax.style.transform = `translateY(-${scrollY * 0.3}px)`;
+        });  
+    </script>
+    
+    <footer>
+        <div class="footer-credits">
+            <p>Copyright © 2025</p>
+            <p>REEARTH acknowledges the Traditional Owners of Country throughout Australia and acknowledges their continuing connection to land, waters and community. We pay our respects to the people, the cultures and the Elders past and present. Learn more about <a href="https://www.indigenous.gov.au/" target="_blank" rel="noopener noreferrer">Australia's Indigenous communities</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>

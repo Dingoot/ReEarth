@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>REEARTH - Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+  <div class="parallax-background" id="parallax"></div>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.png" alt="REEARTH Logo">
+        <span>REEARTH</span>
+      </a>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="podcast.html">Podcast</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="navOverlay"></div>
+
+  <main class="main">
+    <div class="intro">
+      <div class="title">OUR PROJECTS</div>
+      <div class="content">
+        Welcome to our projects page! Here, you can explore the various initiatives and programs we are undertaking to address climate change in Brisbane. From community engagement to sustainable infrastructure, our projects aim to make a positive impact on the environment and society. Take a moment to learn more about our work and how you can get involved in creating a greener future for our city.
+      </div>
+    </div>
+
+    <div class="gallery-wrapper">
+      <div class="gallery">
+        <div class="img img1"><img src="img/project1.jpg" alt="Project 1"></div>
+        <div class="img img2"><img src="img/project2.jpg" alt="Project 2"></div>
+        <div class="img img3"><img src="img/project3.jpg" alt="Project 3"></div>
+        <div class="img img4"><img src="img/project4.jpg" alt="Project 4"></div>
+        <div class="img img5"><img src="img/project5.jpg" alt="Project 5"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-credits">
+      <p>Copyright © 2025</p>
+      <p>REEARTH acknowledges the Traditional Owners of Country throughout Australia and acknowledges their continuing connection to land, waters and community. We pay our respects to the people, the cultures and the Elders past and present. Learn more about <a href="https://www.indigenous.gov.au/" target="_blank" rel="noopener noreferrer">Australia's Indigenous communities</a>.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navbarToggle = document.getElementById('navbarToggle');
+    const navbarNav = document.getElementById('navbarNav');
+    const navOverlay = document.getElementById('navOverlay');
+
+    navbarToggle.addEventListener('click', () => {
+      navbarNav.classList.toggle('open');
+      navOverlay.classList.toggle('active');
+      navbarToggle.classList.toggle('active');
+    });
+
+    navOverlay.addEventListener('click', () => {
+      navbarNav.classList.remove('open');
+      navOverlay.classList.remove('active');
+      navbarToggle.classList.remove('active');
+    });
+
+    const parallax = document.getElementById('parallax');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      parallax.style.transform = `translateY(-${scrollY * 0.3}px)`;
+    });
+  </script>
+</body>
+</html>
